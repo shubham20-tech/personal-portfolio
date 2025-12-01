@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap');
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a192f;
+  --section-bg: #0f1b3a;
+  --card-bg: #112240;
+  --input-bg: #112240;
+  --text: #ccd6f6;
+  --text-secondary: #8892b0;
+  --heading: #e6f1ff;
+  --accent: #64ffda;
+  --border-color: #233554;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,11 +23,25 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add this to handle offset for fixed header */
+section {
+  scroll-margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+  section {
+    scroll-margin-top: 60px;
+  }
+}
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -39,4 +61,54 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+
+
+/* Set up the base styles */
+:root {
+  --font-outfit: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-nunito: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Apply fonts to the document */
+html {
+  font-family: var(--font-nunito);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-outfit);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+  color: var(--heading);
+}
+
+/* Adjust specific heading weights if needed */
+h1 { font-weight: 700; }
+h2 { font-weight: 600; }
+h3 { font-weight: 500; }
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add some basic typography styles */
+p {
+  margin: 0 0 1.5rem 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
 }

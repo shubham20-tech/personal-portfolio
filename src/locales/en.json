@@ -1,0 +1,275 @@
+{
+    "header": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+    },
+    "hero": {
+        "greeting": "Hi, my name is",
+        "name": "Shubham Kumar",
+        "title": "Frontend/UI Developer",
+        "description": "I'm a passionate developer who loves to create beautiful and functional web applications. With 6 years of experience, I specialize in building responsive and user-friendly interfaces using modern web technologies.",
+        "cta": "Get In Touch"
+    },
+    "socialLinks": [
+    {
+        "name": "GitHub",
+        "url": "https://github.com/yourusername",
+        "icon": "github"
+    },
+    {
+        "name": "LinkedIn",
+        "url": "https://linkedin.com/in/yourusername",
+        "icon": "linkedin"
+    },
+    {
+        "name": "Twitter",
+        "url": "https://twitter.com/yourusername",
+        "icon": "twitter"
+    }
+    ],
+    "about": {
+        "title": "About Me",
+        "description": "I'm a Frontend/UI Developer with 6 years of experience specializing in creating clean, modern, and responsive web designs. I focus on turning ideas into pixel-perfect, user-friendly layouts with a keen eye for detail and user experience.",
+        "experienceYears": "6+",
+        "experienceLabel": "Years Experience",
+        "projectsCompleted": "50+",
+        "projectsLabel": "Projects Completed",
+        "clients": "30+",
+        "clientsLabel": "Happy Clients"
+    },
+    "skills": {
+        "title": "My Skills",
+        "subtitle": "Technologies I work with",
+        "description": "I've worked with a variety of technologies in the web development world. Here are the technologies I'm most proficient in.",
+        "categories": {
+            "frontend": "Frontend Development",
+            "uiFrameworks": "UI Frameworks",
+            "versionControl": "Version Control",
+            "tools": "Tools & Platforms"
+        },
+        "technologies": {
+            "html": {
+                "name": "HTML5",
+                "category": "frontend",
+                "level": 95
+            },
+            "css": {
+                "name": "CSS3",
+                "category": "frontend",
+                "level": 90
+            },
+            "javascript": {
+                "name": "JavaScript",
+                "category": "frontend",
+                "level": 90
+            },
+            "typescript": {
+                "name": "TypeScript",
+                "category": "frontend",
+                "level": 85
+            },
+            "react": {
+                "name": "React.js",
+                "category": "uiFrameworks",
+                "level": 90
+            },
+            "nextjs": {
+                "name": "Next.js",
+                "category": "uiFrameworks",
+                "level": 85
+            },
+            "tailwind": {
+                "name": "Tailwind CSS",
+                "category": "uiFrameworks",
+                "level": 88
+            },
+            "materialui": {
+                "name": "Material UI",
+                "category": "uiFrameworks",
+                "level": 85
+            },
+            "git": {
+                "name": "Git",
+                "category": "versionControl",
+                "level": 90
+            },
+            "github": {
+                "name": "GitHub",
+                "category": "versionControl",
+                "level": 90
+            },
+            "gitlab": {
+                "name": "GitLab",
+                "category": "versionControl",
+                "level": 80
+            },
+            "vscode": {
+                "name": "VS Code",
+                "category": "tools",
+                "level": 95
+            },
+            "figma": {
+                "name": "Figma",
+                "category": "tools",
+                "level": 80
+            },
+            "jira": {
+                "name": "Jira",
+                "category": "tools",
+                "level": 85
+            }
+        }
+    },
+    "experience": {
+    "title": "Work Experience",
+    "items": [
+      {
+        "id": 1,
+        "company": "Innovative Code Labs Pvt. Ltd.",
+        "position": "Frontend Developer",
+        "period": "APR 2022 – PRESENT",
+        "location": "Mohali, India",
+        "responsibilities": [
+          "Designed and developed responsive service-based and eCommerce websites using React.js, Gatsby, and Sharetribe",
+          "Built reusable React components and implemented mobile-first designs for improved user engagement",
+          "Delivered static site generation with Gatsby, ensuring SEO-friendly and optimized builds",
+          "Collaborated with clients and designers to deliver tailored solutions aligned with brand identity"
+        ]
+      },
+      {
+        "id": 2,
+        "company": "PlutoTech Pvt. Ltd.",
+        "position": "Associate Frontend Developer",
+        "period": "AUG 2021 – MAR 2022",
+        "location": "Remote",
+        "responsibilities": [
+          "Developed responsive product-based websites with HTML, CSS, JavaScript, and React.js",
+          "Partnered with designers and backend developers to deliver seamless product experiences",
+          "Designed and implemented dynamic interfaces to improve usability",
+          "Ensured cross-browser compatibility and accessibility compliance"
+        ]
+      }
+    ]
+  },
+    "projects": {
+    "title": "My Projects",
+    "description": "Here are some of my recent projects. Each project was built with a focus on user experience, performance, and clean code.",
+    "items": [
+        {
+        "id": 1,
+        "title": "E-commerce Platform",
+        "description": "A full-featured e-commerce platform with product listings, cart functionality, and secure checkout process.",
+        "technologies": ["React", "Node.js", "MongoDB", "Express", "Redux"],
+        "image": "/images/projects/ecommerce.jpg",
+        "links": {
+            "github": "https://github.com/yourusername/ecommerce-platform",
+            "live": "https://ecommerce-demo.example.com"
+        }
+        },
+        {
+        "id": 2,
+        "title": "Task Management App",
+        "description": "A task management application with drag-and-drop functionality, task categories, and real-time updates.",
+        "technologies": ["React", "Firebase", "Material-UI", "React DnD"],
+        "image": "/images/projects/task-manager.jpg",
+        "links": {
+            "github": "https://github.com/yourusername/task-manager",
+            "live": "https://taskmanager-demo.example.com"
+        }
+        },
+        {
+        "id": 3,
+        "title": "Portfolio Website",
+        "description": "A modern and responsive portfolio website to showcase my work and skills as a developer.",
+        "technologies": ["Next.js", "CSS Modules", "Framer Motion", "i18n"],
+        "image": "/images/projects/portfolio.jpg",
+        "links": {
+            "github": "https://github.com/yourusername/portfolio",
+            "live": "https://yourname.dev"
+        }
+        }
+    ]
+    },
+    "contact": {
+        "title": "Get In Touch",
+        "getInTouch": "Get In Touch",
+        "description": "I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+        "form": {
+            "name": "Your Name",
+            "email": "Your Email",
+            "subject": "Subject",
+            "message": "Your Message",
+            "submit": "Send Message",
+            "sending": "Sending..."
+        },
+        "successMessage": "Your message has been sent successfully! I'll get back to you soon.",
+        "errorMessage": "Something went wrong. Please try again later."
+    },
+    "footer": {
+        "about": {
+            "title": "About Me",
+            "description": "Frontend/UI Developer with 6 years of experience creating beautiful, responsive, and user-friendly web applications."
+        },
+        "quickLinks": {
+            "title": "Quick Links",
+            "links": [
+                {
+                    "label": "Home",
+                    "url": "#home"
+                },
+                {
+                    "label": "About",
+                    "url": "#about"
+                },
+                {
+                    "label": "Skills",
+                    "url": "#skills"
+                },
+                {
+                    "label": "Projects",
+                    "url": "#projects"
+                },
+                {
+                    "label": "Experience",
+                    "url": "#experience"
+                },
+                {
+                    "label": "Contact",
+                    "url": "#contact"
+                }
+            ]
+        },
+        "contact": {
+            "title": "Get In Touch",
+            "email": "shubham@example.com",
+            "location": "New Delhi, India"
+        },
+        "socialLinks": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com",
+                "icon": "💻"
+            },
+            {
+                "name": "LinkedIn",
+                "url": "https://linkedin.com",
+                "icon": "🔗"
+            },
+            {
+                "name": "Twitter",
+                "url": "https://twitter.com",
+                "icon": "🐦"
+            },
+            {
+                "name": "Email",
+                "url": "mailto:shubham@example.com",
+                "icon": "✉️"
+            }
+        ],
+        "copyright": "Shubham Kumar. All rights reserved."
+    }
+}

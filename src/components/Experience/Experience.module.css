@@ -1,0 +1,186 @@
+/* src/components/Experience/Experience.module.css */
+.experience {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--text);
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--heading);
+}
+
+.sectionNumber {
+  color: var(--accent);
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.sectionDescription {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+  color: var(--text);
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: var(--accent);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timelineItem {
+  padding: 1rem 0;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+  transform: translateX(0);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.timelineItem.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.left {
+  left: 0;
+  padding-right: 3rem;
+  text-align: right;
+}
+
+.right {
+  left: 50%;
+  padding-left: 3rem;
+  text-align: left;
+}
+
+.timelineContent {
+  background-color: var(--section-bg);
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  transition: all 0.3s ease;
+}
+
+.timelineContent:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px -10px rgba(2, 12, 27, 0.8);
+}
+
+.timelineHeader {
+  margin-bottom: 0.75rem;
+}
+
+.role {
+  color: var(--heading);
+  font-size: 1.25rem;
+  margin: 0 0 0.25rem;
+}
+
+.company {
+  display: block;
+  color: var(--accent);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.period {
+  display: block;
+  color: var(--text);
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.techTag {
+  background-color: rgba(100, 255, 218, 0.1);
+  color: var(--accent);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 40px;
+  }
+
+  .timelineItem {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    text-align: left !important;
+  }
+
+  .left, .right {
+    left: 0;
+    text-align: left;
+    padding-right: 25px;
+    padding-left: 70px;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+  
+  .experience {
+    padding: 4rem 1.5rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timelineItem {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.timelineItem:nth-child(1) { animation-delay: 0.1s; }
+.timelineItem:nth-child(2) { animation-delay: 0.2s; }
+.timelineItem:nth-child(3) { animation-delay: 0.3s; }
+.timelineItem:nth-child(4) { animation-delay: 0.4s; }

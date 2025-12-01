@@ -1,0 +1,178 @@
+/* src/components/Projects/Projects.module.css */
+.projects {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--text);
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--heading);
+}
+
+.sectionNumber {
+  color: var(--accent);
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.sectionDescription {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+  color: var(--text);
+  text-align: center;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.projectCard {
+  background-color: var(--section-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.2);
+}
+
+.projectCard.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.projectImage {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(100, 255, 218, 0.1) 0%,
+    rgba(100, 255, 218, 0.2) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.projectCard:hover .overlay {
+  opacity: 1;
+}
+
+.projectCard:hover .image {
+  transform: scale(1.05);
+}
+
+.projectContent {
+  padding: 1.5rem;
+}
+
+.projectTitle {
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+  color: var(--heading);
+}
+
+.projectDescription {
+  color: var(--text);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.techTag {
+  background-color: rgba(100, 255, 218, 0.1);
+  color: var(--accent);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.projectLink {
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+}
+
+.projectLink:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+  transform: translateY(-2px);
+}
+
+.linkIcon {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.liveLink {
+  background-color: var(--accent);
+  color: var(--section-bg);
+}
+
+.liveLink:hover {
+  background-color: rgba(100, 255, 218, 0.8);
+  color: var(--section-bg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects {
+    padding: 4rem 1.5rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+  
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .projectCard {
+    margin-bottom: 2rem;
+  }
+}
